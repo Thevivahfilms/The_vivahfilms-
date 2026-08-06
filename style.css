@@ -52,16 +52,18 @@ color:#d4af37;
 .hero{
     height:100vh;
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.70)),
-    url("images/hero.jpg");
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+        linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)),
+        url("images/hero.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding:20px;
+}
 }
 
 .hero-content{
