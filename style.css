@@ -50,17 +50,48 @@ color:#d4af37;
 /* Hero */
 
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("images/hero.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.70)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:850px;
+    animation:fadeUp 1.2s ease;
+}
+
+.hero h1{
+    font-size:68px;
+    color:#d4af37;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:24px;
+    color:#fff;
+    margin-bottom:35px;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 }
 
 .hero h1{
