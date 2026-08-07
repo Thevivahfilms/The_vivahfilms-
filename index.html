@@ -23,7 +23,11 @@
 <h2>The Vivah Films</h2>
 </div>
 
-<nav>
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+</div>
+
+<nav id="navbar">
 
 <a href="#home">Home</a>
 
@@ -237,5 +241,26 @@ target="_blank">
 
 <script src="script.js"></script>
 
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
+
+menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+
+    const icon = menuToggle.querySelector("i");
+
+    if (navbar.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+});
+</script>
+
 </body>
 </html>
+
