@@ -71,7 +71,7 @@ background-repeat: no-repeat;
   .hero{
     background:
     linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("hero.jpg");
+    url("images/hero.jpg");
 
     background-size: cover;
     background-position: center center;
@@ -86,7 +86,7 @@ background-repeat: no-repeat;
   .hero{
     background:
     linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("hero-mobile.jpg");
+    url("images/hero-mobile.jpg");
 
     background-size: cover;
     background-position: center top;
