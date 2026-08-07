@@ -463,5 +463,18 @@ animation:bounce 1.5s infinite;
    Mobile Responsive Hero
 =========================== */
 @media (max-width:768px){
+.hero{
+    min-height: 100vh;
+    padding: 120px 20px 60px;
+    background-position: center top;
+}
 
+.hero h1{
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.hero p{
+    font-size: 20px;
+}
 }
