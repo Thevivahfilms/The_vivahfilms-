@@ -460,74 +460,93 @@ animation:bounce 1.5s infinite;
     box-shadow:0 15px 35px rgba(212,175,55,.35);
 }
 /* ==========================
-   FINAL MOBILE HERO
+   FINAL PREMIUM MOBILE
 ========================== */
 
 @media (max-width:768px){
 
+/* Header */
 .header{
-    padding:16px 20px;
+    padding:12px 18px;
 }
 
 .logo h2{
-    font-size:32px;
+    font-size:23px;
+    line-height:1.2;
+    letter-spacing:.5px;
 }
 
 nav{
-    margin-top:12px;
+    margin-top:8px;
 }
 
 nav a{
-    font-size:15px;
-    margin:8px 12px;
+    font-size:14px;
+    margin:6px 10px;
 }
 
+/* Hero */
 .hero{
     min-height:100vh;
-    padding:95px 20px 40px;
-
+    padding:55px 20px 30px;
     background-size:cover;
-    background-position:center top;
+    background-position:center -135px;
     background-repeat:no-repeat;
 }
 
 .hero-content{
-    max-width:100%;
+    width:100%;
+    max-width:330px;
+    margin:0 auto;
+    text-align:center;
 }
 
+/* Main Heading */
 .hero h1{
-    font-size:42px;
-    line-height:1.1;
-    margin-bottom:12px;
-}
-
-.hero p:first-of-type{
-    font-size:18px;
-    line-height:1.5;
+    font-size:33px;
+    line-height:1.12;
+    font-weight:700;
+    letter-spacing:-0.4px;
     margin-bottom:14px;
 }
 
-.hero p:last-of-type{
-    font-size:16px;
+/* Tagline */
+.hero p:first-of-type{
+    font-size:15px;
     line-height:1.5;
-    margin-bottom:25px;
+    margin-bottom:12px;
+    color:#f5f5f5;
 }
 
+/* Description */
+.hero p:last-of-type{
+    font-size:14px;
+    line-height:1.6;
+    max-width:300px;
+    margin:0 auto 24px;
+    color:#ececec;
+}
+
+/* Button */
 .btn{
-    padding:15px 40px;
-    font-size:18px;
+    padding:14px 40px;
+    font-size:17px;
+    border-radius:50px;
 }
 
+/* Hide Extra */
 .btn2,
 .scroll-down{
     display:none;
 }
 
+/* WhatsApp */
 .whatsapp{
-    width:60px;
-    height:60px;
-    right:18px;
-    bottom:18px;
+    width:56px;
+    height:56px;
+    right:16px;
+    bottom:16px;
 }
 
 }
+   
