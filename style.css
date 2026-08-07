@@ -59,7 +59,7 @@ color:#d4af37;
 
     background:
     linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("images/hero.jpg");
+    url("hero.jpg");
 
     background-size:cover;
     background-position:center;
@@ -452,50 +452,51 @@ animation:bounce 1.5s infinite;
 /* ===========================
    Mobile Responsive Hero
 =========================== */
-@media (max-width: 768px) {
+@media (max-width:768px){
 
 .hero{
     min-height:100vh;
-    padding:120px 20px 60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-
+    padding:170px 20px 80px;
     background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("images/hero.jpg");
-
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url("hero.jpg");
     background-size:cover;
-    background-position:center;
+    background-position:center center;
 }
 
 .hero-content{
     width:100%;
     max-width:100%;
+    padding-top:30px;
 }
 
 .hero h1{
-    font-size:48px;
-    line-height:1.05;
-    margin-bottom:20px;
+    font-size:40px;
+    line-height:1.2;
 }
 
 .hero p{
     font-size:18px;
-    line-height:1.7;
-    margin-bottom:30px;
+    line-height:1.6;
 }
 
-.hero-buttons{
+.buttons{
     display:flex;
     flex-direction:column;
-    gap:15px;
     align-items:center;
+    gap:15px;
 }
 
-.hero-buttons a{
-    width:240px;
+.btn,
+.btn2{
+    width:230px;
+    text-align:center;
+}
+
+.scroll-down{
+    margin-top:30px;
+}
+
 }
 
 }
