@@ -359,12 +359,17 @@ font-size:32px;
 }
 
 .scroll-down{
-    position: absolute;
-    left: 50%;
-    bottom: 90px;
-    transform: translateX(-50%);
-    width: 100%;
-    text-align: center;
+position:relative;
+left:auto;
+bottom:auto;
+transform:none;
+margin-top:40px;
+text-align:center;
+color:#d4af37;
+font-size:22px;
+font-weight:700;
+animation:bounce 1.5s infinite;
+}
 
     color: #d4af37;
     font-size: 30px;
