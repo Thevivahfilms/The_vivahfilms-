@@ -463,155 +463,142 @@ animation:bounce 1.5s infinite;
    FINAL PREMIUM MOBILE
 ========================== */
 
+/* =================================
+   FINAL MOBILE CSS
+   ================================= */
+
 @media (max-width:768px){
 
-/* Header */
-.header{
-    padding:12px 18px;
-}
-
-.logo h2{
-    font-size:23px;
-    line-height:1.2;
-    letter-spacing:.5px;
-}
-
-nav{
-    margin-top:8px;
-}
-
-nav a{
-    font-size:14px;
-    margin:6px 10px;
-}
-
-/* Hero */
-.hero{
-    min-height:100vh;
-    padding:120px 20px 25px;
-    background-size:cover;
-    background-position:center 20px;
-    background-repeat:no-repeat;
-}
-
-.hero-content{
-    width:100%;
-    max-width:330px;
-    margin:140px auto 0;
-    text-align:center;
-}
-
-/* Main Heading */
-.hero h1{
-    font-size:33px;
-    line-height:1.12;
-    font-weight:700;
-    letter-spacing:-0.4px;
-    margin-bottom:14px;
-}
-
-/* Tagline */
-.hero p:first-of-type{
-    font-size:15px;
-    line-height:1.5;
-    margin-bottom:12px;
-    color:#f5f5f5;
-}
-
-/* Description */
-.hero p:last-of-type{
-    font-size:14px;
-    line-height:1.6;
-    max-width:300px;
-    margin:0 auto 24px;
-    color:#ececec;
-}
-
-/* Button */
-.btn{
-    padding:14px 40px;
-    font-size:17px;
-    border-radius:50px;
-}
-
-/* Hide Extra */
-.btn2,
-.scroll-down{
-    display:none;
-}
-
-/* WhatsApp */
-.whatsapp{
-    width:56px;
-    height:56px;
-    right:16px;
-    bottom:16px;
-}
-
-}
-/* =========================================
-   MOBILE HAMBURGER MENU
-   Desktop Design Safe
-========================================= */
-
-.menu-toggle{
-    display:none;
-    cursor:pointer;
-    font-size:24px;
-    color:#d9b23f;
-}
-
-/* Mobile Only */
-@media (max-width:768px){
-
+    /* Header */
     .header{
-        position:relative;
-        padding:14px 20px;
-        min-height:65px;
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
+        padding:12px 18px;
     }
 
     .logo h2{
-        font-size:24px;
-        margin:0;
+        font-size:23px;
+        line-height:1.2;
+        letter-spacing:.5px;
     }
 
-    .menu-toggle{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        width:44px;
-        height:44px;
-        z-index:1001;
+    nav{
+        margin-top:8px;
     }
 
-    #navbar{
+    nav a{
+        font-size:14px;
+        margin:6px 10px;
+    }
+
+
+    /* ===============================
+       HERO
+       =============================== */
+
+.hero{
+    position:relative;
+    min-height:100svh;
+    padding:80px 18px 40px;
+
+    background-image:url("images/mobile-wedding-bg.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
+
+    /* Dark overlay */
+    .hero::before{
+        content:"";
         position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#111;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:0;
-        padding:0;
-        max-height:0;
-        overflow:hidden;
-        opacity:0;
-        transition:
-            max-height .35s ease,
-            opacity .25s ease,
-            padding .35s ease;
-        z-index:1000;
+        inset:0;
+        background:rgba(0,0,0,.28);
+        z-index:0;
     }
 
+
+    /* Hero Content */
+    .hero-content{
+        position:relative;
+        z-index:1;
+
+        width:100%;
+        max-width:330px;
+        margin:80px auto 0;
+
+        text-align:center;
+    }
+
+
+    /* Main Heading */
+    .hero h1{
+        font-size:31px;
+        line-height:1.15;
+        font-weight:700;
+        letter-spacing:-.5px;
+        margin-bottom:16px;
+    }
+
+
+    /* Tagline */
+    .hero p:first-of-type{
+        font-size:15px;
+        line-height:1.5;
+        margin-bottom:12px;
+        color:#f5f5f5;
+    }
+
+
+    /* Description */
+    .hero p:last-of-type{
+        font-size:14px;
+        line-height:1.6;
+        max-width:300px;
+        margin:0 auto 24px;
+        color:#ececec;
+    }
+
+
+    /* Book Now Button */
+    .hero .btn,
+    .hero a{
+        display:inline-block;
+        padding:14px 40px;
+        border-radius:50px;
+
+        font-size:16px;
+        font-weight:700;
+
+        text-decoration:none;
+        transition:.3s;
+    }
+
+
+    /* About Button */
+    .about .btn{
+        display:inline-block;
+        padding:16px 40px;
+        background:#d4af37;
+        color:#111;
+        border-radius:50px;
+        text-decoration:none;
+        font-weight:700;
+        transition:.4s;
+    }
+
+
+    .about .btn:hover{
+        background:#fff;
+        color:#111;
+        transform:translateY(-5px);
+        box-shadow:0 15px 35px rgba(212,175,55,.35);
+    }
+
+
+    /* Mobile Navigation */
     #navbar.active{
         max-height:400px;
         opacity:1;
-        padding:10px 0 15px;
+        padding:10px 15px;
     }
 
     #navbar a{
@@ -624,18 +611,6 @@ nav a{
 
     #navbar a:hover{
         color:#d9b23f;
-    }
-}  
-/* MOBILE HERO BACKGROUND */
-@media (max-width: 768px){
-
-    .hero{
-        min-height: 100svh;
-        padding: 100px 18px 40px;
-
-        background-size: 100% 100%;
-        background-position: center top;
-        background-repeat: no-repeat;
     }
 
 }
