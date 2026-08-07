@@ -595,11 +595,20 @@ animation:bounce 1.5s infinite;
 
 
     /* Mobile Navigation */
-    #navbar.active{
-        max-height:400px;
-        opacity:1;
-        padding:10px 15px;
-    }
+
+#navbar{
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    padding:0;
+    transition:max-height .4s ease, opacity .3s ease, padding .3s ease;
+}
+
+#navbar.active{
+    max-height:400px;
+    opacity:1;
+    padding:10px 15px;
+}
 
     #navbar a{
         width:100%;
