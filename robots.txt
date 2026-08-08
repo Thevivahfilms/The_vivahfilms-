@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thevivahfilms.github.io/The_vivahfilms-/sitemap.xml
